@@ -32,10 +32,6 @@ import javax.ws.rs.NotFoundException;
 import javax.ws.rs.InternalServerErrorException;
 
 
-/**
- *
- * @author BalaVignesh
- */
 @Path("/")
 public class StudentResource {
     
@@ -47,7 +43,7 @@ public class StudentResource {
     {
         try{
          SendRequest s = new SendRequest();
-         String str = s.SendRequest("http://35.224.65.85:8080/GradeBook/resources/serverdetails", "GET",null);
+         String str = s.SendRequest("http://34.72.167.47:8080/GradeBook/resources/serverdetails", "GET",null);
       
          System.out.println(str);
          return str;
